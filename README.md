@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Flutter Login UI 
 
 It's a #SpeedCode tutorial for Flutter #Login #UI project with splash screen and multiple color support. This tutorial will provide following UI. Complete source code is hosted at github.com.  You can download or clone the #Flutter project from GitHub.  
@@ -46,3 +47,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# PruebaLoginFlutter
+a flutter mini project made by another person on youtube
+>>>>>>> 77bdf92ec542249d004a5e5a0099f0107f90180f
