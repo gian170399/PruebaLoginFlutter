@@ -57,7 +57,13 @@ class _SplashScreenState extends State<SplashScreen> {
             width: 140.0,
             child: Center(
               child: ClipOval(
-                child: Icon(Icons.android_outlined, size: 128,), //put your logo here
+                child: Column(
+                  children:[
+                    Text("Bienvenido"),
+                    SizedBox(height: 10,),
+                  Icon(Icons.access_alarm_outlined, size: 128,), //put your logo here
+                  ],
+                ),
               ),
             ),
             decoration: BoxDecoration(

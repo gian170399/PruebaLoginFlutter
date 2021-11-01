@@ -39,11 +39,11 @@ class _LoginPageState extends State<LoginPage>{
                 child: Column(
                   children: [
                     Text(
-                      'Hello',
+                      'Bienvenido',
                       style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      'Signin into your account',
+                      'Inicia Sesion',
                       style: TextStyle(color: Colors.grey),
                     ),
                     SizedBox(height: 30.0),
@@ -53,7 +53,7 @@ class _LoginPageState extends State<LoginPage>{
                           children: [
                             Container(
                               child: TextField(
-                                decoration: ThemeHelper().textInputDecoration('User Name', 'Enter your user name'),
+                                decoration: ThemeHelper().textInputDecoration('Usuario', 'Ingresa tu nombre de usuario'),
                               ),
                               decoration: ThemeHelper().inputBoxDecorationShaddow(),
                             ),
@@ -61,7 +61,7 @@ class _LoginPageState extends State<LoginPage>{
                             Container(
                               child: TextField(
                                 obscureText: true,
-                                decoration: ThemeHelper().textInputDecoration('Password', 'Enter your password'),
+                                decoration: ThemeHelper().textInputDecoration('Contrasena', 'Ingresa tu contrasena'),
                               ),
                               decoration: ThemeHelper().inputBoxDecorationShaddow(),
                             ),
@@ -73,7 +73,7 @@ class _LoginPageState extends State<LoginPage>{
                                 onTap: () {
                                   Navigator.push( context, MaterialPageRoute( builder: (context) => ForgotPasswordPage()), );
                                 },
-                                child: Text( "Forgot your password?", style: TextStyle( color: Colors.grey, ),
+                                child: Text( "Olvidaste tu contrasena?", style: TextStyle( color: Colors.grey, ),
                                 ),
                               ),
                             ),
@@ -83,7 +83,7 @@ class _LoginPageState extends State<LoginPage>{
                                 style: ThemeHelper().buttonStyle(),
                                 child: Padding(
                                   padding: EdgeInsets.fromLTRB(40, 10, 40, 10),
-                                  child: Text('Sign In'.toUpperCase(), style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),),
+                                  child: Text('Iniciar Sesion'.toUpperCase(), style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),),
                                 ),
                                 onPressed: (){
                                   //After successful login we will redirect to profile page. Let's create profile page now
@@ -97,9 +97,9 @@ class _LoginPageState extends State<LoginPage>{
                               child: Text.rich(
                                 TextSpan(
                                   children: [
-                                    TextSpan(text: "Don\'t have an account? "),
+                                    TextSpan(text: "No tienes cuenta? "),
                                     TextSpan(
-                                      text: 'Create',
+                                      text: 'Creala',
                                       recognizer: TapGestureRecognizer()
                                         ..onTap = (){
                                           Navigator.push(context, MaterialPageRoute(builder: (context) => RegistrationPage()));
